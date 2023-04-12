@@ -1,0 +1,30 @@
+//Import Files
+//Variblies File
+@use './sass/Variblies.scss' as *;
+
+//Navbar File
+@use "./Components/Navbar/Navbar.scss" as *;
+
+//Landing File
+@use "./Components/Landing/Landing.scss" as *;
+
+//Feature File
+@use "./Components/Feature/Feature.scss" as *;
+
+//About File
+@use "./Components/About/About.scss" as *;
+
+//Product File
+@use "./Components/Product/Product.scss" as *;
+
+//Footer File
+@use "./Components/Footer/Footer.scss" as *;
+
+//Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+//Rules
+body{
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}

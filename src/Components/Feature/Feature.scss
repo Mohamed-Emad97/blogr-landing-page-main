@@ -1,0 +1,40 @@
+@use "../../sass/Variblies.scss" as *;
+
+//Rules
+#feature{
+    background-color: rgba($Grayish-blue-footer-text , 0.1);
+    h2{
+        color: $Very-dark-blue-headings;
+        font-weight: 700;
+    }
+    h3{
+        color: $Very-dark-blue-headings;
+        font-weight: 700;
+    }
+    p{
+        color: $Very-dark-desaturated-blue;
+        font-size: $Font-size;
+    }
+    img{
+        //width: 100%;
+        left: 25%;
+        top: -10%;
+    }
+}
+
+@media (max-width: 767px) {
+    #feature{
+        .reverse{
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+        img{
+            left: auto;
+            top: auto;
+            width: 100%;
+        }
+        .content{
+            text-align: center;
+        }
+    }
+}

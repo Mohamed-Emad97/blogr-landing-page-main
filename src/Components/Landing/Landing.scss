@@ -1,0 +1,63 @@
+@use "../../sass/Variblies.scss" as *;
+
+//Rules
+#landing{
+    background-color: $Light-red;
+    border-bottom-left-radius: 100px;
+    background-image: url(./assets/images/bg-pattern-intro-desktop.svg);
+    background-size: 150%;
+    background-position: left;
+    color: $White-text;
+    .caption{
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size: $Font-size;
+            letter-spacing: 2px;
+        }
+        .btns{
+            .btnMain, .btnSec{  
+                font-size: $Font-size;
+                font-weight: 700;
+                transition: all 1s;
+                outline: none;
+            }
+            .btnSec{
+                background-color: transparent;
+                border: 1px solid $White-text;
+                color: $White-text;
+                &:hover{
+                    color: $Light-red-CTA-text;
+                    background-color: $White-text;
+                }
+            }
+            .btnMain{
+                color: $Light-red;
+                background-color: $White-text;
+                border: none;
+                &:hover{
+                    background-color: $Light-red-CTA-text;
+                    color: $White-text;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    #landing{
+        background-image: url(./assets/images/bg-pattern-intro-mobile.svg);
+        background-size: 300%;
+        background-position: center;
+        .caption{
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                letter-spacing: normal;
+            }
+        }
+    }
+}

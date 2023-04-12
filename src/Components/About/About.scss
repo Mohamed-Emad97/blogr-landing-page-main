@@ -1,0 +1,64 @@
+@use "../../sass/Variblies.scss" as *;
+
+//Rules 
+#about{
+    background-color: $Very-dark-desaturated-blue;
+    background-image: url(./assets/images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50%;
+    color: $White-text;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    .img{
+        img{
+            position: absolute;
+            width: 25%;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+        }
+    }
+    .content{
+        h3{
+            font-weight: 700;
+        }
+        p{
+            font-size: $Font-size;
+            line-height: 1.7;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #about{
+        background-position: top center;
+        .img{
+            img{
+                position: absolute;
+                width: 50%;
+                top: 20%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+            }
+        }
+        .content{
+            text-align: center;
+            padding-top: 15rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #about {
+        .img{
+            img{
+                width: 65%;
+                top: 15%;
+            }
+        }
+    }
+    .content{
+        padding-top: 2rem;
+    }
+}

@@ -1,0 +1,34 @@
+@use "../../sass/Variblies.scss" as *;
+
+//Rules
+footer{
+    background-color: $Very-dark-black-blue-footer-background;
+    border-top-right-radius: 50px;
+    h3{
+        font-weight: 700;
+        color: $White-text;
+    }
+    ul{
+        li{
+            margin: 10px 0;
+            a{
+                text-decoration: none;
+                color: $Grayish-blue-footer-text;
+                font-size: $Font-size;
+                transition: color ease 1s;
+                &:hover{
+                    color: $White-text;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    footer{
+        text-align: center;
+        .img{
+            padding-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@use "../../sass/Variblies.scss" as *;
+
+
+//Rules
+header{
+    background-color: transparent;
+    nav{
+        ul{
+            li{
+                a{
+                    color: rgba($White-text, 0.6) !important;
+                    font-family: 'Overpass', sans-serif;
+                    font-size: $Font-size;
+                    transition: color ease 1s;
+                    &:hover{
+                        color: $White-text !important;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            color: $Very-dark-gray-blue !important;
+                            font-size: $Font-size;
+                            font-family: 'Overpass', sans-serif;
+                            transition: all ease 1s;
+                            &:hover{
+                                font-weight: 700;
+                                color: $Very-dark-gray-blue !important;
+                                background-color: $White-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btnMain, .btnSec{
+            border: none;
+            outline: none;
+            width: 100px;
+            font-size: $Font-size;
+            transition: all 1s;
+        }
+        .btnSec{
+            background-color: $White-text;
+            color: $Light-red;
+            &:hover{
+                color: $White-text;
+                background-color: $Light-red-CTA-text;
+            }
+        }
+        .btnMain{
+            background-color: transparent;
+            color: rgba($White-text, 0.6);
+            &:hover{
+                color: $White-text;
+            }
+        }
+    }
+}
+
+.scrolled{
+    background-color: $Light-red-CTA-text;
+}
+
+
+@media (max-width: 992px) {
+    header{
+        nav{
+            ul, .btns{
+                background-color: $White-text;
+            }
+            ul{
+                margin-top: 20px;
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                li{
+                    a{
+                        color: $Very-dark-gray-blue !important;
+                        &:hover{
+                            color: $Very-dark-gray-blue !important;
+                            font-weight: 700;    
+                        }
+                    }
+                    ul{
+                        background-color: $Grayish-blue-footer-text !important;
+                    }
+                }
+            }
+            .btnMain{
+                color: $Very-dark-gray-blue;
+                &:hover{
+                    color: $Very-dark-gray-blue;
+                    font-weight: 700;
+                }
+            }
+            .btnSec{
+                background: linear-gradient(to left, $Light-red-CTA-text, $Very-light-red-CTA-hover-background);
+            }
+        }
+    }
+}
